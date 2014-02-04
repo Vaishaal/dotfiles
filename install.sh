@@ -1,7 +1,7 @@
 #!/bin/bash
 git submodule update --init --recursive
 echo "Setting up tmux \n"
-ln -s ~/tmux-config/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/tmux-config/.tmux.conf ~/.tmux.conf
 cd tmux-config/vendor/tmux-mem-cpu-load
 cmake .
 make
