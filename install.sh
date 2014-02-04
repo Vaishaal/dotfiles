@@ -10,6 +10,6 @@ make install
 cd ~/dotfiles
 curl -L https://raw.github.com/vaishaal/oh-my-zsh/master/tools/install.sh | sh
 
-ln -s .vim ~/.vim
-ln -s .vim/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.vim ~/.vim
+ln -s ~/dotfiles/.vim/.vimrc ~/.vimrc
 
