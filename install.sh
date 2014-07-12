@@ -8,8 +8,12 @@ make
 make install
 
 cd ~/dotfiles
+rm -rf ~/.oh-my-zsh
 curl -L https://raw.github.com/vaishaal/oh-my-zsh/master/tools/install.sh | sh
 
-ln -s `pwd`/dotfiles/.vim ~/.vim
-ln -s `pwd`/dotfiles/.vim/.vimrc ~/.vimrc
+rm -rf ~/.vim
+rm -rf ~/.vimrc
+
+ln -s `pwd`/.vim ~/.vim
+ln -s `pwd`/.vim/.vimrc ~/.vimrc
 
