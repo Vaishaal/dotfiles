@@ -9,11 +9,14 @@ make install
 
 cd ~/dotfiles
 rm -rf ~/.oh-my-zsh
-curl -L https://raw.github.com/vaishaal/oh-my-zsh/master/tools/install.sh | sh
 
 rm -rf ~/.vim
 rm -rf ~/.vimrc
+rm -rf ~/.emacs
 
 ln -s `pwd`/.vim ~/.vim
 ln -s `pwd`/.vim/.vimrc ~/.vimrc
+ln -s `pwd`/.emacs ~/.emacs
 
+
+curl -L https://raw.github.com/vaishaal/oh-my-zsh/master/tools/install.sh | sh
